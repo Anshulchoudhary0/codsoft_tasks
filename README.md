@@ -1,59 +1,103 @@
-## How to Run the Projects in an IDE
+# Python Mini Projects
 
-### Prerequisites
-- Install **Python 3.x** from [python.org](https://www.python.org/downloads/) (make sure to check **"Add Python to PATH"** during installation).
-- No external libraries are required (all scripts use Python's standard library).
+A collection of three beginner-friendly, menu-driven Python command-line applications: a Password Generator, a Rock-Paper-Scissors Game, and a Contact Book.
 
 ---
 
+## Table of Contents
+- [Projects Overview](#projects-overview)
+  - [1. Password Generator](#1-password-generator)
+  - [2. Rock-Paper-Scissors Game](#2-rock-paper-scissors-game)
+  - [3. Contact Book](#3-contact-book)
+- [Prerequisites](#prerequisites)
+- [How to Run in an IDE](#how-to-run-in-an-ide)
+  - [Visual Studio Code](#option-1-visual-studio-code-vs-code)
+  - [PyCharm](#option-2-pycharm)
+  - [Terminal / Command Prompt](#option-3-terminal--command-prompt)
+
+---
+
+## Projects Overview
+
+### 1. Password Generator (`task3_password_generator.py`)
+Generates secure, customizable passwords.
+- **Features:**
+  - Custom password length specification.
+  - Optional complexity toggles (uppercase letters, digits, special characters).
+  - Built using Python's `random` and `string` modules.
+
+### 2. Rock-Paper-Scissors Game (`rockpaper_scissors_game.py`)
+An interactive, turn-based game against the computer.
+- **Features:**
+  - Dynamic user choice vs. randomized computer choice.
+  - Automatic round winner determination.
+  - Multi-round score tracking.
+  - Option to replay or quit at any time.
+
+### 3. Contact Book (`contact_book.py`)
+A CRUD-based contact management application.
+- **Features:**
+  - **Add Contact:** Save name, phone number, email, and address.
+  - **View Contacts:** List all stored contacts.
+  - **Search Contact:** Search entries by name or phone number.
+  - **Update Contact:** Modify existing contact information.
+  - **Delete Contact:** Remove contacts with a confirmation check.
+
+---
+
+## Prerequisites
+
+- **Python 3.x** installed from [python.org](https://www.python.org/downloads/) (ensure **"Add Python to PATH"** was checked during installation).
+- No external packages needed (uses standard Python libraries).
+
+---
+
+## How to Run in an IDE
+
 ### Option 1: Visual Studio Code (VS Code)
 
-1. **Open the Project Folder:**
+1. **Open Project Folder:**
    - Launch VS Code.
-   - Go to `File` > `Open Folder...` and select the folder containing the `.py` files.
+   - Click `File` > `Open Folder...` and choose the folder containing your Python files.
 
-2. **Install the Python Extension:**
-   - Click the **Extensions** icon on the left sidebar (or press `Ctrl+Shift+X` / `Cmd+Shift+X`).
-   - Search for **Python** (by Microsoft) and click **Install**.
+2. **Verify Python Extension:**
+   - Open the Extensions tab (`Ctrl+Shift+X` on Windows / `Cmd+Shift+X` on macOS).
+   - Ensure the official **Python** extension (by Microsoft) is installed.
 
-3. **Select Python Interpreter:**
-   - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac).
-   - Type and select `Python: Select Interpreter`, then choose your installed Python 3 version.
-
-4. **Run the Script:**
-   - Open any file (e.g., `task3_password_generator.py`).
-   - Click the **Play (▷)** button in the top-right corner, or right-click anywhere in the editor and choose **Run Python File in Terminal**.
+3. **Run the Script:**
+   - Select any script (`task3_password_generator.py`, `rockpaper_scissors_game.py`, or `contact_book.py`) in the file explorer.
+   - Click the **Run Python File (▷)** button in the top-right corner.
    - Interact with the program inside the integrated terminal at the bottom.
 
 ---
 
 ### Option 2: PyCharm
 
-1. **Open the Project:**
-   - Launch PyCharm and select `Open`.
-   - Browse to and open your project folder.
+1. **Open Project:**
+   - Launch PyCharm and click **Open**.
+   - Select your project folder.
 
-2. **Configure Python Interpreter:**
-   - Go to `File` > `Settings` > `Project: <folder_name>` > `Python Interpreter` (on macOS: `PyCharm` > `Preferences`).
-   - Ensure a valid Python 3 interpreter is selected.
+2. **Select Interpreter:**
+   - Navigate to `File` > `Settings` > `Project: <folder_name>` > `Python Interpreter` (or `PyCharm` > `Settings` on macOS).
+   - Ensure a Python 3.x interpreter is selected.
 
-3. **Run the Script:**
-   - Right-click the file you want to execute (e.g., `task4_rock_paper_scissors.py`) in the Project tree on the left.
-   - Select **Run 'task4_rock_paper_scissors'**.
-   - The interactive console will open at the bottom.
+3. **Execute:**
+   - Right-click the file you want to run from the left project panel.
+   - Click **Run 'filename'**.
+   - Use the interactive console window below to test.
 
 ---
 
 ### Option 3: Terminal / Command Prompt
 
-You can also run any script directly via your terminal:
+You can also run any script directly from your terminal:
 
 ```bash
-# Task 3: Password Generator
+# Password Generator
 python task3_password_generator.py
 
-# Task 4: Rock-Paper-Scissors Game
-python task4_rock_paper_scissors.py
+# Rock-Paper-Scissors Game
+python rockpaper_scissors_game.py
 
-# Task 5: Contact Book
-python task5_contact_book.py
+# Contact Book
+python contact_book.py
