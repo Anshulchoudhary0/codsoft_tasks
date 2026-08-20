@@ -1,3 +1,8 @@
+# solve 80 problems as well for AI and ML 
+https://docs.google.com/document/d/1CuKacG3lnnt5B-7kB9p1DiJ2PLFW8TQWn9JG1lTYRJs/edit?tab=t.0#heading=h.ghy5ky51yxzv
+
+
+
 # Python Mini Projects
 
 A collection of three beginner-friendly, menu-driven Python command-line applications: a Password Generator, a Rock-Paper-Scissors Game, and a Contact Book.
